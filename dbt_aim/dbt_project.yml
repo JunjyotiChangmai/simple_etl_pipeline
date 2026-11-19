@@ -1,0 +1,15 @@
+name: 'dbt_aim'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_aim'
+model-paths: ["models"]
+
+vars:
+  alert_staging_table: 'stg_alerts_ahus_prescriptive_internal'
+  patient_staging_table: 'stg_patient_id_ahus_prescriptive_internal'
+  indication_alert: 'aHUS prescriptive'
+
+models:
+  dbt_aim:
+    +materialized: table

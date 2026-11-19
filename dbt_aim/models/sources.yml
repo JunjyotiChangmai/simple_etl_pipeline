@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_komodo
+    database: KOMODO
+    schema: RAW_KOMODO
+    tables:
+      - name: raw_ahus_prescriptive_alert_internal
